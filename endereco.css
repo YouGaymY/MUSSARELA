@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: red; /* Fundo vermelho sólido */
+    padding: 10px 20px;
+    height: 40px;
+}
+
+.back-icon {
+    height: 25px;
+    cursor: pointer;
+}
+
+header h1 {
+    margin: 0;
+    color: white;
+    font-weight: bold;
+    font-size: 2.2em;
+    text-align: center;
+    flex: 1; /* Faz com que o texto fique centralizado no espaço */
+}
+
+main {
+    padding: 20px;
+    margin-top: 100px;
+}
+
+.address-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.address-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 1.1em;
+}
+
+.address-form input {
+    padding: 15px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.address-form button {
+    padding: 14px;
+    font-size: 1rem;
+    color: white;
+    background-color: red;
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.address-form button:hover {
+    background-color: darkred;
+}
+
+#texto {
+    font-size: 15px; /* Tamanho do texto inicial */
+    position: absolute; /* Permite mover o texto */
+    top: 80px; /* Distância do topo */
+    left: 30px; /* Distância da esquerda */
+    cursor: pointer; /* Muda o cursor para indicar que o texto pode ser movido */
+}

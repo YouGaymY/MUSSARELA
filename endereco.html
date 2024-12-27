@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="endereco.css">
+    <script src="endereco.js"></script> <!-- Referência ao script JavaScript -->
+    <title>Endereço</title>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="https://i.ibb.co/7yDgBcQ/Picsart-24-12-23-02-41-17-873.png" alt="Voltar para a página inicial" class="back-icon">
+        </a>
+        <h1>Mussarela</h1>
+    </header>
+    <main>
+        <p id="texto">Preencha os campos abaixo por gentileza <br> para a entrega do pedido!</p>
+        <form class="address-form" id="addressForm" action="confirmar.html" method="POST" onsubmit="return sendData()">
+            <label for="street">Rua:</label>
+            <input type="text" id="street" name="street" placeholder="Digite sua rua" required>
+            
+            <label for="number">Número:</label>
+            <input type="text" id="number" name="number" placeholder="Digite o número" required>
+            
+            <label for="neighborhood">Bairro:</label>
+            <input type="text" id="neighborhood" name="neighborhood" placeholder="Digite o bairro" required>
+            
+            <label for="city">Cidade:</label>
+            <input type="text" id="city" name="city" placeholder="Digite a cidade" required>
+            
+            <label for="cep">CEP:</label>
+            <input type="text" id="cep" name="cep" placeholder="Digite o CEP" maxlength="10" required oninput="formatCep(this)" pattern="\d{5}-\d{3}" title="O CEP deve estar no formato 12345-678">
+            
+            <label for="state">Estado:</label>
+            <input type="text" id="state" name="state" placeholder="Digite o estado" required>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+</body>
+</html>

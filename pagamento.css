@@ -1,0 +1,165 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red; /* Fundo vermelho sólido */
+    padding: 10px 20px;
+    height: 40px;
+    position: relative; /* Para posicionar o ícone de voltar */
+}
+
+.back-icon {
+    position: absolute;
+    left: 15px; /* Ícone no lado esquerdo */
+    height: 25px;
+    cursor: pointer;
+    margin-top: -12px;
+}
+
+header h1 {
+    color: white;
+    margin: 0;
+    font-size: 2em;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.payment-options {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espaço entre os botões */
+}
+
+.payment-button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.payment-button.pix {
+    background-color: #4caf50; /* Verde para Pix */
+}
+
+.payment-button.card {
+    background-color: #007bff; /* Azul para Cartão */
+}
+
+.payment-button:hover {
+    transform: scale(1.05); /* Aumenta levemente ao passar o mouse */
+    opacity: 0.9; /* Reduz opacidade ao passar o mouse */
+}
+
+.hidden {
+    display: none;
+}
+
+#pix-checkout, #card-checkout, #message {
+    margin-top: 20px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    display: none;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+    font-size: 1em;
+    text-align: left;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.submit-button {
+    padding: 12px 40px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+#pix-checkout {
+    margin-top: 20px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    display: none;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#pix-checkout img {
+    margin: 20px 0;
+    max-width: 200px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+}
+
+.pix-code {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.pix-code input {
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 80%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1em;
+}
+
+.pix-code button {
+    padding: 10px 45px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+.pix-code button:hover {
+    background-color: #3e8e41;
+}

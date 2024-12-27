@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+header h1 {
+    color: red;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#successImage {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+#loadingText {
+    font-size: 1.2em;
+    color: #555;
+}
+
+#dots {
+    color: red;
+    font-weight: bold;
+}

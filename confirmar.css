@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: red; /* Fundo vermelho sólido */
+    padding: 10px 20px;
+    height: 40px;
+}
+
+.back-icon {
+    height: 25px;
+    cursor: pointer;
+}
+
+header h1 {
+    margin: 0;
+    color: white;
+    font-weight: bold;
+    font-size: 2.2em;
+    text-align: center;
+    flex: 1; /* Faz com que o texto fique centralizado no espaço */
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+#addressConfirmation {
+    background-color: white; /* Fundo branco para os dados */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombrinha sutil para destacar */
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#addressConfirmation p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+#buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+button {
+    background-color: #ff6f61; /* Cor de fundo do botão */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    width: 48%; /* Ajuste para os botões ficarem lado a lado */
+}
+
+button:hover {
+    background-color: #e65c4f; /* Cor mais escura ao passar o mouse */
+}
+
+/* Estilos específicos para os botões */
+#backButton {
+    background-color: white;
+    color: red;
+    border: 1px solid red;
+}
+
+#backButton:hover {
+    background-color: red;
+    color: white;
+}
+
+#confirmButton {
+    background-color: green;
+    color: white;
+}
+
+#confirmButton:hover {
+    background-color: darkgreen;
+}
